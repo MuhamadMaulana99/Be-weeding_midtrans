@@ -99,12 +99,12 @@ exports.createMidtransPaymentLink = async (req, res) => {
     let parameter = {
       transaction_details: {
         order_id: `ORDER-${Math.floor(Math.random() * 1000000)}`, // ID order unik
-        gross_amount: 1000000, // Total jumlah transaksi (hardcoded untuk saat ini)
+        gross_amount: 1000, // Total jumlah transaksi (hardcoded untuk saat ini)
       },
       item_details: [
         {
           name: paket, // Nama produk (paket yang dipilih)
-          price: 1000000, // Harga produk per unit (contoh harga)
+          price: 1000, // Harga produk per unit (contoh harga)
           quantity: 1, // Jumlah produk
         },
       ],
